@@ -28,10 +28,11 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/xiaoguai/FCMediaKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'FCMediaKit/Classes/**/*'
+  s.ios.deployment_target = '12.0'
   
+  s.source_files = 'FCMediaKit/Classes/**/*', 'lib/*.h'
+  s.vendored_libraries = 'lib/*.a'
+
   # s.resource_bundles = {
   #   'FCMediaKit' => ['FCMediaKit/Assets/*.png']
   # }
